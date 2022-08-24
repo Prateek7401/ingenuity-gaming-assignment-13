@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-13</title>
+</head>
+
+<body>
+  <h1>THIS IS A DEMO SITE A  CONTACT FORM WILL APPEAR AFTER 10 SEC</h1>
+<script>
+    setTimeout(
+      function openWindow()
+        {
+          var url="./contactform.html"
+          var windowSize="height=650",width="800"
+          var newWindow=window.open(url,"Typing page",windowSize)
+          newWindow.moveTo(450,100)
+        }
+        ,10000
+    );
+</script>
+</body>
+</html>

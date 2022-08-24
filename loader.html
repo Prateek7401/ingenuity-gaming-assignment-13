@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Square+Peg&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(to right top, blue, rgb(209, 52, 120));
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 5px solid rgba(255, 255, 255, 0.408);
+        border-top: 5px solid whitesmoke;
+        border-radius: 50%;
+        animation: loader 2s ease  infinite ;
+
+    }
+
+    p{
+        font-size: 1.2em;
+        color: whitesmoke;
+        animation: popup 2s ease infinite ;
+    }
+
+    @keyframes loader{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+
+    }
+
+    @keyframes popup {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    #todocon{
+      display: none;
+    }
+</style>
+
+<div class="container">
+  <div class="box"></div>
+  <p>Loading......</p>
+</div>
+<div id="todocon">
+
+  <header><strong>To-do List</strong></header>
+      <form>
+        <input type="text"placeholder="Please add task in your to-do list"    class="todo-input" />
+        <button>
+          <i class="fa fa-plus-square" aria-hidden="true"></i>
+        </button>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

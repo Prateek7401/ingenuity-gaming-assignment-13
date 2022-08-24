@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+background: url("https://thumbs.dreamstime.com/b/todo-list-seamless-pattern-universal-background-66678083.jpg");  
+  color: white;
+    font-fAamily: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  header,
+  form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    font-size: 70px;
+    color: brown;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Square Peg', cursive;
+  }
+  
+  form input,
+  form button {
+    padding: 15px;
+    border: none;
+    font-size: 35px;
+    background: pink;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Square Peg', cursive;
+    outline: none;
+    border-radius: 5%;
+  }
+  form input
+  {
+    width: 350px;
+  }
+  form button {
+    color: white;
+    
+    background-color: green;
+    cursor: pointer;
+  }
+  form button:hover {
+    color: white;
+    background-color: royalblue;
+  }
+  
+  /* ----------------New List Container----------------- */
+
+
+  .todo-container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-list
+  {
+    list-style:decimal;
+    min-height: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    
+  }
+  .todo
+  {
+    background-color: rgb(216, 164, 21);
+    font-size: 40px;
+    margin:8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    border-radius: 5%;
+
+
+  }
+  .todo_item
+  {
+    margin:0 5px;
+  }
+  .todo li{
+    flex:1;
+
+  }
+  .cmpltbtn,.deletebtn
+  {
+    color:aliceblue;
+    background-color: teal;
+    border:none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10%;
+  }
+  .deletebtn{
+    background: red;
+  }
+  .check
+  {
+    opacity:.5;
+    text-decoration: line-through;
+  }
+
+
+
